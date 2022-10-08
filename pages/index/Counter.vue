@@ -1,5 +1,5 @@
 <template>
-  <button type="button" @click="state.count++">Counter {{ state.count }}</button>
+  <button data-testid="counterButton" type="button" @click="state.count++">Counter {{ state.count }}</button>
 </template>
 
 <script lang="ts" setup>
