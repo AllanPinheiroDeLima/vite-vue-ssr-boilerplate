@@ -7,16 +7,10 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "rootDir": ".",
     "types": [
       "vitest/globals",
       "vite/client"
-    ],
-    "paths": {
-      "@/*": ["./*"],
-      "@pages/*": ["./src/pages/*"],
-      "@components/*": ["./src/components/*"]
-    }
+    ]
   },
   "ts-node": {
     "transpileOnly": true,

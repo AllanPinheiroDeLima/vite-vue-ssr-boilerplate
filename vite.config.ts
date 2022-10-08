@@ -3,15 +3,26 @@ import ssr from 'vite-plugin-ssr/plugin'
 import {defineConfig} from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
+import vuetify from 'vite-plugin-vuetify'
+import path from "path";
 
 const config = defineConfig({
   plugins: [
     vue(),
-    ssr({ prerender: true }),
-    tsconfigPaths({ loose: true }),
+    ssr({ prerender: true, includeCSS: ["@mdi/font/css/materialdesignicons.css"] }),
+    // tsconfigPaths({ loose: true, root: "." }),
     // CONFIGURATION STEPS HERE https://vue-i18n.intlify.dev/guide/introduction.html
-    vueI18n()
+    vueI18n(),
+    vuetify({ autoImport: true })
   ],
+  define: { 'process.env': {} },
+  ssr: { noExternal: ['vuetify'] },
+    resolve: {
+    alias: {
+      '@/pages': path.resolve(__dirname, './pages'),
+      '@': path.resolve(__dirname, './')
+    },
+  },
   test: {
     environment: "jsdom",
     globals: true,
