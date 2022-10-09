@@ -3,6 +3,7 @@ import 'vuetify/lib/styles/main.sass'
 import {createVuetify, ThemeDefinition} from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import {mdi} from "vuetify/lib/iconsets/mdi";
 
 const myCustomLightTheme: ThemeDefinition = {
   dark: true,

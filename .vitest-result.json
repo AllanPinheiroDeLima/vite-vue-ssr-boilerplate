@@ -8,7 +8,7 @@
   "numFailedTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "startTime": 1665265760736,
+  "startTime": 1665273367870,
   "success": true,
   "testResults": [
     {
@@ -21,7 +21,7 @@
           "fullName": " Counter Should have the counter defined in the ambiente",
           "status": "passed",
           "title": "Should have the counter defined in the ambiente",
-          "duration": 26,
+          "duration": 55,
           "failureMessages": []
         },
         {
@@ -32,12 +32,12 @@
           "fullName": " Counter Should increment the counter",
           "status": "passed",
           "title": "Should increment the counter",
-          "duration": 6,
+          "duration": 29,
           "failureMessages": []
         }
       ],
-      "startTime": 1665265762740,
-      "endTime": 1665265762772,
+      "startTime": 1665273766547,
+      "endTime": 1665273766631,
       "status": "passed",
       "message": "",
       "name": "C:/Users/allan/Documents/git/ZRI/vite-ssr-boilerplate/pages/index/Counter.test.ts"
