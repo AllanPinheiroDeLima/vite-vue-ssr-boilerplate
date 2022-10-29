@@ -2,7 +2,7 @@
   <!-- THIS ONE IS IN GLOBAL SCOPE, REFERENCED BY GLOBAL INJECTION AT THE CREATION
       MORE INFORMATION HERE https://vue-i18n.intlify.dev/guide/advanced/composition.html#global-scope
     -->
-  <h1>{{ $t("message.hello") }}</h1>
+  <h1 class="text-lg font-bold">{{ $t("message.hello") }}</h1>
   {{ t("title") }}
   <ul>
     <li>{{ t("list.item1") }}</li>
@@ -14,7 +14,7 @@
 import Counter from './Counter.vue'
 import {useI18n} from "vue-i18n";
 /*
-* This messages are inject throuhg the composition api
+* This messages are inject through the composition api
 * More information here: https://vue-i18n.intlify.dev/guide/advanced/composition.html#composition-api
 * */
 const { t } = useI18n()

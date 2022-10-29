@@ -1,3 +1,4 @@
+import "../assets/css/index.css";
 import { createApp } from './app'
 import type { PageContextClient } from './types'
 
